@@ -6,5 +6,5 @@ standard_functions:
 anomaly_dataset:
   type: unsupervised
   arguments:
-    normal_labels: [1]
-    anomaly_labels: [0]
+    normal_labels: [0]
+    anomaly_labels: [1]
