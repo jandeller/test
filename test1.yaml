@@ -1,7 +1,7 @@
 standard_functions:
 - name: standardize_columns
   parameters:
-    cols_to_normalize: None
+    cols_to_standardize: None
 
 anomaly_dataset:
   type: unsupervised
