@@ -4,7 +4,6 @@ standard_functions:
     cols_to_standardize: None
 
 anomaly_dataset:
-  type: unsupervised
   arguments:
     normal_labels: [1]
     anomaly_labels: [2, 3, 4, 5]
