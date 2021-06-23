@@ -1,7 +1,7 @@
 standard_functions:
 - name: standardize_columns
   parameters:
-    cols_to_standardize: None
+    cols_to_standardize: null
 
 anomaly_dataset:
   arguments:
