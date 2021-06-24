@@ -1,0 +1,9 @@
+standard_functions:
+- name: standardize_columns
+  parameters:
+    cols_to_standardize: null
+
+anomaly_dataset:
+  arguments:
+    normal_labels: [False]
+    anomaly_labels: [True]
