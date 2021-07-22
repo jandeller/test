@@ -1,7 +1,7 @@
 standard_functions:
 - transform_labels_iqr
   parameters:
-  - sth: null
+    sth: null
   
 anomaly_dataset:
   arguments:
