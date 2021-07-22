@@ -1,5 +1,5 @@
 standard_functions:
-- transform_labels_iqr
+- name: transform_labels_iqr
   parameters:
     sth: null
   
