@@ -1,0 +1,5 @@
+custom_functions:
+  - name: scale_values
+    parameters:
+      - scaling_factor: 0.5
+      - message: "Scaled all values by factor 0.5."
