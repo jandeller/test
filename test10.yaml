@@ -1,0 +1,28 @@
+# lympho
+standard_functions:
+- name: standardize_columns
+  parameters:
+    cols_to_standardize: null
+- name: transform_categorical_to_one_hot
+  parameters:
+    cols_to_onehot: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16]
+
+anomaly_dataset:
+  arguments:
+    normal_labels: [2, 3]
+    anomaly_labels: [1, 4]
+
+sampling:
+  unsupervised_multiple_benchmark:
+    contamination_rate: 0.05
+    downscaling_factor: 0.9
+    n_steps: 10
+    shuffle: true
+    random_seed: 42
+    apply_random_seed: true
+    keep_frequency_ratio_normals: false
+    equal_frequency_normals: false
+    keep_frequency_ratio_anomalies: false
+    equal_frequency_anomalies: false
+    include_description: true
+    flatten_images: true
