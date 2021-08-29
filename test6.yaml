@@ -7,3 +7,18 @@ anomaly_dataset:
   arguments:
     normal_labels: [False]
     anomaly_labels: [True]
+
+sampling:
+  unsupervised_multiple_benchmark:
+    contamination_rate: 0.05
+    downscaling_factor: 0.9
+    n_steps: 10
+    shuffle: true
+    random_seed: 42
+    apply_random_seed: true
+    keep_frequency_ratio_normals: false
+    equal_frequency_normals: false
+    keep_frequency_ratio_anomalies: false
+    equal_frequency_anomalies: false
+    include_description: true
+    flatten_images: true
