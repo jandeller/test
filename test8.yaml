@@ -1,7 +1,18 @@
+# boston
 standard_functions:
+- name: delete_duplicates
+  parameters: {}
+- name: treat_missing_values
+  parameters:
+    delete_attributes: true
+    missing_value: np.nan
+- name: robust_scale_columns
+  parameters:
+    cols_to_robust_scale: null
 - name: transform_labels_iqr
   parameters:
     sth: null
+
   
 anomaly_dataset:
   arguments:
