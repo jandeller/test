@@ -1,7 +1,14 @@
+# pageblocks
 standard_functions:
-- name: standardize_columns
+- name: delete_duplicates
+  parameters: {}
+- name: treat_missing_values
   parameters:
-    cols_to_standardize: null
+    delete_attributes: true
+    missing_value: np.nan
+- name: robust_scale_columns
+  parameters:
+    cols_to_robust_scale: null
 
 anomaly_dataset:
   arguments:
