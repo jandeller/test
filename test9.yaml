@@ -10,8 +10,7 @@ standard_functions:
   parameters:
     cols_to_robust_scale: null
 - name: transform_labels_iqr
-  parameters:
-    sth: {}
+  parameters: {}
   
 anomaly_dataset:
   arguments:
