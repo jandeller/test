@@ -1,11 +1,17 @@
 # lympho
 standard_functions:
+- name: delete_duplicates
+  parameters: {}
+- name: treat_missing_values
+  parameters:
+    delete_attributes: true
+    missing_value: np.nan
 - name: transform_categorical_to_one_hot
   parameters:
     cols_to_onehot: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16]
-- name: standardize_columns
+- name: robust_scale_columns
   parameters:
-    cols_to_standardize: null
+    cols_to_robust_scale: null
 
 anomaly_dataset:
   arguments:
