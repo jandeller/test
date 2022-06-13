@@ -9,7 +9,8 @@ def plot_moons(X, y):
   x2 = X[:, 1]
   plt.scatter(x1, x2, c=y)
 
-def plot_moons_predictions(X, y, model, x1_lim=(-2, 4), x2_lim=(-2, 2), plot_points=True):
+  
+def plot_moons_predictions(X, y, model, scaler, x1_lim=(-2, 4), x2_lim=(-2, 2), plot_points=True):
   """
   Plots prediciton surface of a model within the bounds specified by the limits and
   additionally plots the original data points (can be turned off).
@@ -21,6 +22,7 @@ def plot_moons_predictions(X, y, model, x1_lim=(-2, 4), x2_lim=(-2, 2), plot_poi
   X2_flattened = X2_mesh.flatten()
   X_grid = np.array(list(zip(X1_flattened, X2_flattened)))
 
+  X_grid = scaler.transform(X_grid)
   preds = model(X_grid)
   preds_mesh = preds.numpy().reshape(50, 50)
 
